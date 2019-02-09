@@ -19,4 +19,8 @@ export class ExamsApiService {
       .get<Exam[]>(`${API_URL}/exams`)
       .pipe(catchError(ExamsApiService._handleError));
   }
+
+  saveExam(exam: Exam): Observable<any> {
+    return this.http.post(`${API_URL}/exams`, exam);
+  }
 }
