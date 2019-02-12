@@ -32,7 +32,7 @@ export class AppModule {
     Auth0.configure({
       domain: 'khalalw.auth0.com',
       audience: 'https://online-exam.kwalker.io',
-      clientID: 'eQiYqlalpNQGq5pl1FnnPQCQrodaRUz2`',
+      clientID: 'eQiYqlalpNQGq5pl1FnnPQCQrodaRUz2',
       redirectUri: 'http://localhost:4200/callback',
       scope: 'openid profile manage:exams',
     });
